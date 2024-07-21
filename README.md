@@ -21,7 +21,7 @@ $$
 with 
 
 $$
-\mathcal{L}(\mathbf{\theta}, \mathbf{\phi}; \mathbf{x}) = \mathbb{E}_{q_{\phi}} \left[\log p(\mathbf{x}, \mathbf{z}|\mathbf{\theta}) - \log q(\mathbf{z}|\mathbf{x},\mathbf{\phi})\right] \tag{4}
+\mathcal{L}(\bm{\theta}, \bm{\phi}; \bm{x}) = \mathbb{E}_{q_{\phi}} \left[\log p(\bm{x}, \bm{z}|\bm{\theta}) - \log q(\bm{z}|\bm{x},\bm{\phi})\right] \tag{4}
 $$
 
 being the **variational lower bound** of the marginal likelihood. Our goal is finding $q$ such that the Kullback-Leibler divergence term is minimum and this minimization problem is equivalent to the maximization of the variational lower bound $\mathcal{L}$. The standard approach to this problem is the Mean Field (MF) ansatz, which consists in assuming a factorized form of $q$ over a subset of latent variables:
