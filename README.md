@@ -1,5 +1,9 @@
 
 # Variational Auto-Encoders (VAEs)
+Auto-Encoding Variational Bayes
+Diederik P Kingma, Max Welling
+
+https://doi.org/10.48550/arXiv.1312.6114
 
 
 ## Introduction and Theoretical Background
