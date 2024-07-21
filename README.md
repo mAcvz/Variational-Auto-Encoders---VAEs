@@ -36,10 +36,10 @@ The problem is that MF approach involves the calculations of integrals depending
 - efficient approximate esitmation of $p(\mathbf{x}|\mathbf{\theta})$.
 
 Then, assuming that the MF approach is not doable, in our new scenario:
-- $q(\mathbf{z}|\mathbf{x},\mathbf{\phi})$ is not assumed to be factorized anymore and acts as an **encoder** since starting from a datapoint $\mathbf{x}$ it provides a distribution over the the latent space variables
+- $q(\mathbf{z}|\mathbf{x},\mathbf{\phi})$ is not assumed to be factorized anymore and acts as an **encoder** since starting from a datapoint $\mathbf{x}$ it provides a distribution over the latent space variables
 - $p(\mathbf{x}|\mathbf{z},\mathbf{\theta})$ acts as a **decoder** since starting from an encoded datapoint $\mathbf{z}$ living in the latent space it provides a distribution over the possible values of $\mathbf{x}$ that may correspond to it.
 
-Of course, we re left with the problem of learning the parameters that define our probabilistic encoder and decoder. To deal with it, it is useful to rewrite the variational lower bound $(4)$ as 
+Of course, we are left with the problem of learning the parameters that define our probabilistic encoder and decoder. To deal with it, it is useful to rewrite the variational lower bound $(4)$ as 
 
 $$
 \mathcal{L}(\mathbf{\theta}, \mathbf{\phi}; \mathbf{x}^{(i)}) = -D_{KL}(q(\mathbf{z}|\mathbf{x}^{(i)},\mathbf{\phi})||p(\mathbf{z}|\mathbf{\theta})) + \mathbb{E}_{q_{\phi}} \left[\log p(\mathbf{x}^{(i)}|\mathbf{z}, \mathbf{\theta})\right] \tag{6}
