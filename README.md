@@ -66,7 +66,7 @@ The main focus of the article is showing the implementation of the aforementione
 $$
 p(\mathbf{z}|\mathbf{\theta}) = \mathcal{N}(\mathbf{0}, \mathbf{I}) \tag{9}
 $$
-2. assuming that the approximate posterior is Gaussian with diagional identity matrix
+2. assuming that the approximate posterior is Gaussian with diagonal identity matrix
 $$
 q(\mathbf{z}|\mathbf{x}^{(i)},\mathbf{\phi}) \equiv \mathcal{N}(\mathbf{z}|\mathbf{\mu}_\phi(\mathbf{x}^{(i)}), diag(\mathbf{\sigma}^2_\phi(\mathbf{x}^{(i)}))) \tag{10}
 $$
